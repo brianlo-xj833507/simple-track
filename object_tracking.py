@@ -663,7 +663,7 @@ def track_storms(OldStormData,
             else:
                 wassep = StormData[wasind[0][0]].wasdist
             ########################################
-            # WASSEP NOW CONTAINS ALL NON-ZERO OVERLAP VALUES # TODO: No?
+            # WASSEP NOW CONTAINS ALL NON-ZERO OVERLAP VALUES
             # FIND THE MAXIMUM (THIS WILL BE THE PARENT)
             # ALL OTHER STORMS WILL BE THE CHILDREN
             #########################################
