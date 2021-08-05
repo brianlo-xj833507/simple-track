@@ -55,7 +55,7 @@ def plot_example(write_file_ID, nt, rain, xmat, ymat, newumat, newvmat, num_dt, 
     figa = plt.figure(figsize=(6, 7))
     # ax = figa.add_subplot(111)
     # con = ax.imshow(f, cmap=cm.jet, interpolation='nearest')
-    con = plt.pcolor(xmat, ymat, np.log2(lrain), vmin=-1, vmax=5)
+    con = plt.pcolor(xmat, ymat, np.log2(lrain), vmin=-1, vmax=5, shading='auto')
     plt_ax = plt.gca()
     left, bottom, width, height = plt_ax.get_position().bounds
     posnew = [left, bottom + height / 7, width, width * 6 / 7]
@@ -72,7 +72,7 @@ def plot_example(write_file_ID, nt, rain, xmat, ymat, newumat, newvmat, num_dt, 
     figb = plt.figure(figsize=(6, 7))
     # ax = figa.add_subplot(111)
     # con = ax.imshow(f, cmap=cm.jet, interpolation='nearest')
-    con = plt.pcolor(xmat, ymat, wasarray, vmin=-10, vmax=200)
+    con = plt.pcolor(xmat, ymat, wasarray, vmin=-10, vmax=200, shading='auto')
     plt_ax = plt.gca()
     left, bottom, width, height = plt_ax.get_position().bounds
     posnew = [left, bottom + height / 7, width, width * 6 / 7]
@@ -90,7 +90,7 @@ def plot_example(write_file_ID, nt, rain, xmat, ymat, newumat, newvmat, num_dt, 
     figc = plt.figure(figsize=(6, 7))
     # ax = figa.add_subplot(111)
     # con = ax.imshow(f, cmap=cm.jet, interpolation='nearest')
-    con = plt.pcolor(xmat, ymat, 5 * lifearray, vmin=-30, vmax=60)
+    con = plt.pcolor(xmat, ymat, 5 * lifearray, vmin=-30, vmax=60, shading='auto')
     plt_ax = plt.gca()
     left, bottom, width, height = plt_ax.get_position().bounds
     posnew = [left, bottom + height / 7, width, width * 6 / 7]
